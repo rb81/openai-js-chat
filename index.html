@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.3.2/markdown-it.min.js"></script>
+    <link rel="stylesheet" href="/src/css/styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="chat-container">
+            <div class="chat-header">
+                <span class="chat-title">ChatGPT</span>
+                <div id="settings-toggle" class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+    
+            <div class="chat-messages">
+                <!-- Chat messages will be dynamically added here -->
+            </div>
+    
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button class="send-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="send-icon">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+        <div class="settings-panel">
+            <button class="close-settings">&times;</button>
+            <h2>Settings</h2>
+            
+            <div class="settings-group">
+                <h3>API Configuration</h3>
+                <label for="api-key">OpenAI API Key:</label>
+                <input type="password" id="api-key" name="api-key">
+            </div>
+            
+            <div class="settings-group">
+                <h3>Chat Configuration</h3>
+                <label for="system-prompt">System Prompt:</label>
+                <textarea id="system-prompt" name="system-prompt" rows="4"></textarea>
+                
+                <label for="bot-name">Bot Name:</label>
+                <input type="text" id="bot-name" name="bot-name">
+                
+                <label for="user-name">User Name:</label>
+                <input type="text" id="user-name" name="user-name">
+                
+                <label for="max-history">Max Chat History Length:</label>
+                <input type="number" id="max-history" name="max-history" min="1">
+            </div>
+            
+            <div class="settings-group">
+                <h3>Memories</h3>
+                <textarea id="memories" name="memories" rows="4"></textarea>
+            </div>
+            
+            <div class="settings-group">
+                <h3>Appearance</h3>
+                <label for="dark-mode" class="toggle-label">
+                    Dark Mode
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="dark-mode" name="dark-mode">
+                        <span class="toggle-slider"></span>
+                    </div>
+                </label>
+            </div>
+            
+            <button id="save-settings">Save Settings</button>
+            <button id="delete-messages">Delete All Messages</button>
+            
+        </div>
+    </div>
+    <script type="module" src="src/js/main-app.js"></script>
+</body>
+</html>
