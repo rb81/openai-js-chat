@@ -78,4 +78,4 @@ This application uses OpenAI's API, which may have usage costs. Please be aware 
 
 ## Transparency Disclaimer
 
-[ai.collaboratedwith.me](ai.collaboratedwith.me) in creating this project.
+[ai.collaboratedwith.me](https://ai.collaboratedwith.me) in creating this project.
