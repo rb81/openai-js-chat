@@ -68,13 +68,13 @@ To run the application in debug mode, append `?debug=true` to the URL. Detailed 
 
 - [Markdown-it](https://github.com/markdown-it/markdown-it) for Markdown rendering
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Disclaimer
 
 This application uses OpenAI's API, which may have usage costs. Please be aware of OpenAI's pricing and terms of service when using this application.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Transparency Disclaimer
 
